@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'echo passed!!!!'
-                git branch: 'main', url: 'https://github.com/mtosin123/springboot-cicd.git' ## replace with your github repository 
+                git branch: 'main', url: 'https://github.com/mtosin123/springboot-cicd.git' 
                 sh 'pwd'
                 sh 'ls'
             }
