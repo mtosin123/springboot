@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Static Code Analysis') {
             environment {
-                SONAR_URL = "http://44.203.71.78:9000/"  ## replace the address once the sonarqube server is live 
+                SONAR_URL = "http://44.203.71.78:9000" 
             }
             steps {
                 withCredentials([string(credentialsId: 'sonarqube', variable: 'SONAR_AUTH_TOKEN')]) {
